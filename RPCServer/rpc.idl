@@ -1,0 +1,13 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(F6D8F144-8246-4D2F-BFE9-6A29E145B2A9),
+	version(1.0),
+]
+
+interface MPQ
+{
+	void JoinTask([in, string] unsigned char * pszString, [out] int *res);
+	void Shutdown(void);
+}

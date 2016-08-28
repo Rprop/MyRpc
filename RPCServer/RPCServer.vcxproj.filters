@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Midl Include="rpc.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="rpc_s.c">
+      <Filter>RPC</Filter>
+    </ClCompile>
+    <ClCompile Include="server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="RPC">
+      <UniqueIdentifier>{d4d51040-5ebb-457e-9b61-08fee3b75a77}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rpc_h.h">
+      <Filter>RPC</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rpc.acf" />
+  </ItemGroup>
+</Project>
